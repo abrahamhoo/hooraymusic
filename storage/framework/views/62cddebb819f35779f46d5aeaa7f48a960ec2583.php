@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title><?php echo e(isset($title) ? $title . ' - ' : null); ?>Laravel - The PHP Framework For Web Artisans</title>
+    <title><?php echo e(isset($title) ? $title . ' - ' : null); ?>Silly Head Radio Station</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Taylor Otwell">
     <meta name="description" content="Laravel - The PHP framework for web artisans.">
@@ -31,7 +31,7 @@
     </a>
 
     <div class="search nav-block">
-        <h1 style="text-align: center">Let Music Inspire Your Life.</h1>
+        <h1>Let Music Inspire Your Life.</h1>
     </div>
 
     <ul class="main-nav" v-if="! search">

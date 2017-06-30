@@ -5,12 +5,15 @@ nav.main {
 	height: 80px;
 	width: 100%;
 	border-bottom: 1px solid $color__lighter_gray;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 22px;
+
 
     .nav-block {
         display: flex;
         align-items: center;
     }
-
 	a.brand {
         border-right: 1px solid $color__lighter_gray;
 		color: $color__darker_salmon;
@@ -27,14 +30,24 @@ nav.main {
 	}
 
 	ul.main-nav {
-        border-left: 1px solid $color__lighter_gray;
         font-family: $font_alt;
 		list-style: none;
 		display: flex;
         align-items: center;
-		margin: 0;
-		padding: 0 20px;
 		float: right;
+    }
+
+    ul.mid-nav{
+        width: 36%;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    ul.right-nav{
+        width: 82%;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
     }
 
     ul.main-nav > li {
