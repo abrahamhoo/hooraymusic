@@ -54,10 +54,11 @@
                     </li>
                 <?php endif; ?>
             </ul>
+
         </nav>
         <?php echo $__env->yieldContent('content'); ?>
     </div>
     <!-- Scripts -->
-    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/js/laravel.js')); ?>"></script>
 </body>
 </html>

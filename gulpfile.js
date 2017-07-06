@@ -13,6 +13,7 @@ elixir(function(mix) {
             'plugins/typeahead.js',
             'plugins/hogan.js',
             'plugins/mousetrap.js',
+            'plugins/canvas-nest.min.js',
             'laravel.js'
         ],
         'public/assets/js/laravel.js',

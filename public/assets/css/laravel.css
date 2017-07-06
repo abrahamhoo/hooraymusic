@@ -1998,11 +1998,10 @@ nav.main ul.mid-nav {
 }
 
 nav.main ul.right-nav {
-  width: 82%;
+  padding-right: 50px;
   margin: auto;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
   right: 0;
 }
@@ -2137,16 +2136,16 @@ nav.main .switcher .dropdown-menu > li > a {
 
 @media (max-width: 1160px) {
   nav.main .brand,
-  nav.main ul.main-nav {
+  nav.main ul.mid-nav {
     padding: 0 15px !important;
   }
-  nav.main ul.main-nav > li {
+  nav.main ul.mid-nav > li {
     margin: 0 5px;
   }
 }
 
 @media (max-width: 1050px) {
-  nav.main ul.main-nav {
+  nav.main ul.mid-nav {
     padding: 0 5px !important;
   }
   nav.main .search {
@@ -2155,13 +2154,13 @@ nav.main .switcher .dropdown-menu > li > a {
   nav.main .search svg {
     margin-right: 5px;
   }
-  nav.main ul.main-nav > li > a {
+  nav.main ul.mid-nav > li > a {
     font-size: 14px;
   }
 }
 
 @media (max-width: 960px) {
-  nav.main ul.main-nav {
+  nav.main ul.mid-nav {
     display: none;
   }
   .responsive-sidebar-nav {
@@ -2571,6 +2570,10 @@ nav.main .switcher .dropdown-menu > li > a {
 .browser-window .window-content pre[class*="language-"] {
   background: #fff;
   margin: 0;
+}
+
+div.grid {
+  margin-bottom: 20px;
 }
 
 .home .hero {

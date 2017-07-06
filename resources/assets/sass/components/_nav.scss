@@ -44,10 +44,10 @@ nav.main {
         top: 0; left: 0; bottom: 0; right: 0;
     }
     ul.right-nav{
-        width: 82%;
+        padding-right: 50px;
         margin: auto;
         position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
+        top: 0; bottom: 0; right: 0;
     }
 
     ul.main-nav > li {
@@ -150,21 +150,21 @@ nav.main {
 
 @media (max-width:1160px) {
     nav.main .brand,
-    nav.main ul.main-nav { padding: 0 15px !important; }
-	nav.main ul.main-nav > li {
+    nav.main ul.mid-nav { padding: 0 15px !important; }
+	nav.main ul.mid-nav > li {
 		margin: 0 5px;
 	}
 }
 
 @media (max-width:1050px) {
-    nav.main ul.main-nav { padding: 0 5px !important; }
+    nav.main ul.mid-nav { padding: 0 5px !important; }
     nav.main .search { padding: 0 15px; }
     nav.main .search svg { margin-right: 5px; }
-    nav.main ul.main-nav > li > a { font-size: 14px;}
+    nav.main ul.mid-nav > li > a { font-size: 14px;}
 }
 
 @media (max-width:960px) {
-	nav.main ul.main-nav { display: none; }
+	nav.main ul.mid-nav { display: none; }
 	.responsive-sidebar-nav { display: flex; }
 
     .docs .responsive-sidebar-nav {
