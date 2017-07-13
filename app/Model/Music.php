@@ -10,4 +10,7 @@ class Music extends Model
     function a(){
 
     }
+    function b(){
+        
+    }
 }
