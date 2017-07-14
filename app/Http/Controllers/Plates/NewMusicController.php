@@ -11,7 +11,11 @@ class NewMusicController extends Controller
     //
 
     function index(){
-        $newMusic = Music::getNewMusic(12);
-        return view('plates.new_music')->with('newMusic', $newMusic);
+        list($newAlbum, $newSong, $newArtist) = Music::getNewMusic(12);
+
+        return view('plates.new_music')
+            ->with('newAlbum', $newAlbum)
+            ->with('newSong', $newSong)
+            ->with('newArtist', $newArtist);
     }
 }

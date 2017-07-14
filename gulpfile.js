@@ -5,15 +5,12 @@ elixir(function(mix) {
 
     mix.scripts(
         [
-            'jquery.js',
-            'plugins/prism.js',
-            'plugins/bootstrap.js',
-            'plugins/scotchPanels.js',
-            'plugins/algoliasearch.js',
-            'plugins/typeahead.js',
-            'plugins/hogan.js',
-            'plugins/mousetrap.js',
-            'plugins/canvas-nest.min.js',
+
+            'jquery.min.js',
+            'plugins/bootstrap.min.js',
+            'plugins/scotchPanels.js',//生成侧边栏
+            'plugins/mousetrap.js',//响应键盘事件
+            'plugins/canvas-nest.min.js',//背景动画
             'laravel.js'
         ],
         'public/assets/js/laravel.js',

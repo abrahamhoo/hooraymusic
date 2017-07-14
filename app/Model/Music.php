@@ -8,14 +8,12 @@ class Music extends Model
 {
     //
     public static function getNewMusic($num){
-        $newMusic = static::orderBy('release_date', 'DESC')
-                        ->take($num)
-                        ->get();
-        return $newMusic->toArray();
+
+        $newAlbum = Album::getNewAlbum($num);
+        $newSong = Song::getNewSong($num);
+        $newArtist = Artist::getNewArtist($num);
+
+        return array($newAlbum, $newSong, $newArtist);
     }
 
-    function a(){}
-    function b(){}
-    function c(){}
-    function d(){}
 }
