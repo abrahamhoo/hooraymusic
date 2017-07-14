@@ -20,7 +20,10 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Libraries/Functions/funcs.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
