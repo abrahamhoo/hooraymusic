@@ -12,7 +12,6 @@ class NewMusicController extends Controller
 
     function index(){
         $newMusic = Music::getNewMusic(12);
-        print_r('<pre>'.$newMusic);
         return view('plates.new_music')->with('newMusic', $newMusic);
     }
 }

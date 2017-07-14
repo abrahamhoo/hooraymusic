@@ -2576,6 +2576,34 @@ div.grid {
   margin-bottom: 20px;
 }
 
+div.grid div.item {
+  cursor: pointer;
+}
+
+div.grid div.item img.cover:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+div.grid div.item span.name {
+  display: block;
+  padding-bottom: 0;
+}
+
+div.grid div.item span.artist {
+  display: block;
+  padding-top: 0;
+}
+
+div.grid div.item hr.line {
+  margin-bottom: 0;
+  margin-top: 0;
+  border: 0;
+  background-color: #f4645f;
+  height: 1px;
+  width: 5%;
+}
+
 .home .hero {
   padding: 60px 0;
 }
