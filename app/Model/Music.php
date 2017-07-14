@@ -13,4 +13,6 @@ class Music extends Model
                         ->get();
         return $newMusic->toArray();
     }
+
+    function a(){}
 }
