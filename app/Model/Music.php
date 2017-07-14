@@ -16,4 +16,6 @@ class Music extends Model
 
     function a(){}
     function b(){}
+    function c(){}
+    function d(){}
 }
