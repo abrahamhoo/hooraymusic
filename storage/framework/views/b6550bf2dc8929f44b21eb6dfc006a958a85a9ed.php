@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="<?php echo e(elixir('assets/css/laravel.css')); ?>">
 </head>
 <body>
+<nav id="slide-menu" class="slide-menu" role="navigation">
+
+    <div class="brand">
+        <a href="/">
+            <img src="/assets/img/laravel-logo-white.png" height="50">
+        </a>
+    </div>
+
+    <ul class="slide-main-nav">
+        <li><a href="/">Home</a></li>
+        <?php echo $__env->make('partials.main-nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </ul>
+
+</nav>
+
     <div id="app">
         <nav class="main">
             <a href="/" class="brand nav-block">
@@ -54,7 +69,9 @@
                     </li>
                 <?php endif; ?>
             </ul>
-
+            <div class="responsive-sidebar-nav">
+                <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+            </div>
         </nav>
         <?php echo $__env->yieldContent('content'); ?>
     </div>

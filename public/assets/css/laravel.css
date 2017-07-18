@@ -2160,7 +2160,7 @@ nav.main .switcher .dropdown-menu > li > a {
 }
 
 @media (max-width: 960px) {
-  nav.main ul.mid-nav {
+  nav.main ul.mid-nav, nav.main ul.right-nav {
     display: none;
   }
   .responsive-sidebar-nav {

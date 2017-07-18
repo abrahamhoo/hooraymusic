@@ -164,7 +164,7 @@ nav.main {
 }
 
 @media (max-width:960px) {
-	nav.main ul.mid-nav { display: none; }
+	nav.main ul.mid-nav , nav.main ul.right-nav { display: none; }
 	.responsive-sidebar-nav { display: flex; }
 
     .docs .responsive-sidebar-nav {
