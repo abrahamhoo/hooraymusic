@@ -761,6 +761,8 @@ $(function() {
   Mousetrap.bind('/', function(e) {
     $('#search-input').focus();
   }, 'keyup');
+
+  $("#carousel").carousel('cycle');
 });
 
 //# sourceMappingURL=laravel.js.map

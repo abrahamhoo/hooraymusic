@@ -42,6 +42,8 @@ nav.main {
         margin: auto;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
+        word-break:keep-all;
+        white-space:nowrap;
     }
     ul.right-nav{
         padding-right: 50px;
@@ -164,12 +166,14 @@ nav.main {
 }
 
 @media (max-width:960px) {
-	nav.main ul.mid-nav , nav.main ul.right-nav { display: none; }
+	nav.main ul.mid-nav { display: none; }
 	.responsive-sidebar-nav { display: flex; }
 
     .docs .responsive-sidebar-nav {
         border-left: 1px solid $color__lighter_gray;
     }
+
+    nav.main ul.right-nav{ padding-right: 20px}
 
     .docs nav.main .switcher { border: none; }
 }

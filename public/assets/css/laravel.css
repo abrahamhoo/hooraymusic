@@ -1995,6 +1995,8 @@ nav.main ul.mid-nav {
   left: 0;
   bottom: 0;
   right: 0;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 nav.main ul.right-nav {
@@ -2160,7 +2162,7 @@ nav.main .switcher .dropdown-menu > li > a {
 }
 
 @media (max-width: 960px) {
-  nav.main ul.mid-nav, nav.main ul.right-nav {
+  nav.main ul.mid-nav {
     display: none;
   }
   .responsive-sidebar-nav {
@@ -2169,6 +2171,9 @@ nav.main .switcher .dropdown-menu > li > a {
   }
   .docs .responsive-sidebar-nav {
     border-left: 1px solid #dee0df;
+  }
+  nav.main ul.right-nav {
+    padding-right: 20px;
   }
   .docs nav.main .switcher {
     border: none;
@@ -2602,6 +2607,14 @@ div.grid div.item hr.line {
   background-color: #f4645f;
   height: 1px;
   width: 5%;
+}
+
+div.carousel ol.carousel-indicators {
+  bottom: 0;
+}
+
+div.carousel div.carousel-inner div.item {
+  height: 200px;
 }
 
 .home .hero {
