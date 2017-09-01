@@ -1,5 +1,5 @@
 <li class="nav-docs"><a href="/newMusic">New Music</a></li>
-<li class="nav-laracasts"><a href="https://laracasts.com">Radio</a></li>
+<li class="nav-laracasts"><a href="/radio">Radio</a></li>
 <li class="nav-laravel-news"><a href="https://laravel-news.com">News</a></li>
 <li class="nav-forge"><a href="https://forge.laravel.com">Activity</a></li>
 

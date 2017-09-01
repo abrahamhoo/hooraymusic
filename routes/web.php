@@ -22,3 +22,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/newMusic', 'Plates\NewMusicController@index');
+
+Route::get('radio', function () {
+   return view('plates/radio');
+});

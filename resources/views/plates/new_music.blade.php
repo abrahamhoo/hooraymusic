@@ -25,6 +25,17 @@
                     @endforeach
                 </div>
             </div>
+
+            {{--<div class="panel panel-default">--}}
+                {{--<div class="panel-heading">New Artist</div>--}}
+                {{--<div class="panel-body">--}}
+                    {{--@foreach($newArtist as $key=>$item)--}}
+                        {{--@if($key%4 == 0)--}}
+                            {{--@include('partials.grid', ['data' => $newArtist, 'name' => 'artist_name'])--}}
+                        {{--@endif--}}
+                    {{--@endforeach--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
 

@@ -2609,12 +2609,16 @@ div.grid div.item hr.line {
   width: 5%;
 }
 
-div.carousel ol.carousel-indicators {
-  bottom: 0;
+div.carousel {
+  padding-bottom: 20px;
 }
 
 div.carousel div.carousel-inner div.item {
   height: 200px;
+}
+
+div.carousel div.carousel-inner div.item a img {
+  width: 100%;
 }
 
 .home .hero {

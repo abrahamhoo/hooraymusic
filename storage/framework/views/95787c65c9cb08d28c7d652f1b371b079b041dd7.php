@@ -1,26 +1,24 @@
-<div class="row">
-    <div class="col-md-12 ">
-        <div id="carousel" class="carousel slide">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="/newMusic">
-                        <img src="<?php echo e(asset('assets/img/forge-flames.jpg')); ?>" alt="First slide">
-                    </a>
-                </div>
-                <div class="item">
-                    <img src="<?php echo e(asset('assets/img/forge-flames.jpg')); ?>" alt="Second slide">
-                </div>
-                <div class="item">
-                    <img src="<?php echo e(asset('assets/img/forge-flames.jpg')); ?>" alt="Third slide">
-                </div>
+<div id="carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if($key == 0): ?>
+            <li data-target="#carousel" data-slide-to="<?php echo e($key); ?>" class="active"></li>
+            <?php else: ?>
+            <li data-target="#carousel" data-slide-to="<?php echo e($key); ?>"></li>
+            <?php endif; ?>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    </ol>
+    <div class="carousel-inner">
+        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if($key == 0): ?>
+            <div class="item active">
+            <?php else: ?>
+            <div class="item">
+            <?php endif; ?>
+                <a href="<?php echo e($value['url']); ?>">
+                    <img src="<?php echo e(asset($value['cover'])); ?>" alt="<?php echo e($value['comment']); ?>">
+                </a>
             </div>
-        </div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
 </div>

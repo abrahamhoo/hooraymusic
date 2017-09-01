@@ -1,10 +1,14 @@
 div.carousel{
-  ol.carousel-indicators{
-    bottom: 0;
-  }
+  padding-bottom: 20px;
+
   div.carousel-inner{
     div.item{
       height: 200px;
+      a{
+        img{
+          width: 100%;
+        }
+      }
     }
   }
 }
