@@ -9,7 +9,6 @@ use App\Http\Controllers\Controller;
 class NewMusicController extends Controller
 {
     //
-
     function index(){
         list($newAlbum, $newSong, $newArtist) = Music::getNewMusic(4);
 
