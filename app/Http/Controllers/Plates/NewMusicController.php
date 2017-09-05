@@ -11,7 +11,6 @@ class NewMusicController extends Controller
     //
 
     function index(){
-        
         list($newAlbum, $newSong, $newArtist) = Music::getNewMusic(4);
 
         return view('plates.new_music')
